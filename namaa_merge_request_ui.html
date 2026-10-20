@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>طلب ربط ودمج حساب سابق | منصة نما</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Tajawal', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    :root {
+      --namaa-green: #1B7853;
+      --namaa-dark-green: #0E563B;
+      --namaa-hover-green: #146344;
+      --namaa-light-bg: #F4FBF7;
+      --namaa-border: #D1E7DD;
+      --namaa-gold: #C29B38;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #CBD5E1;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-[#F8FAF9] text-[#1E293B] min-h-screen flex flex-col justify-between antialiased">
+
+  <!-- Top Navigation Header (Exact Naama Layout) -->
+  <header class="bg-[#0E563B] text-white shadow-md relative z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Left items: Language & User Profile Badge -->
+        <div class="flex items-center gap-4">
+          <button class="border border-white/40 hover:bg-white/10 text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5 transition-colors font-medium">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            English
+          </button>
+
+          <!-- Current Logged In Master User -->
+          <div class="hidden md:flex items-center gap-3 bg-white/10 border border-white/20 px-3 py-1.5 rounded-xl">
+            <div class="w-8 h-8 rounded-full bg-[#1B7853] flex items-center justify-center font-bold text-white text-xs shadow-sm">
+              م ع
+            </div>
+            <div class="text-right">
+              <div class="text-xs font-bold leading-tight">محمد عبد الله القحطاني</div>
+              <div class="text-[11px] text-emerald-200">هوية وطنية: 1088****** (نفاذ)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center: Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-6 text-xs sm:text-sm font-medium text-white/90">
+          <a href="#" class="hover:text-emerald-200 transition-colors">عن نما</a>
+          <a href="#" class="text-emerald-300 font-bold border-b-2 border-emerald-300 pb-1">دليل الخدمات الإلكترونية</a>
+          <a href="#" class="hover:text-emerald-200 transition-colors">التحول الرقمي</a>
+          <a href="#" class="hover:text-emerald-200 transition-colors">إحصائيات نما</a>
+          <a href="#" class="hover:text-emerald-200 transition-colors">الأسئلة الشائعة</a>
+          <a href="#" class="hover:text-emerald-200 transition-colors">تواصل معنا</a>
+        </nav>
+
+        <!-- Right: Logo Naama -->
+        <div class="flex items-center gap-3">
+          <div class="text-right">
+            <div class="text-2xl font-black tracking-tight leading-none text-white">نَمَـــا</div>
+            <div class="text-[9px] tracking-widest text-emerald-200 font-mono">N A A M A</div>
+          </div>
+          <!-- Stylized Seedling/Palm Icon from Logo -->
+          <div class="w-10 h-10 flex items-center justify-center bg-white/15 rounded-lg border border-white/20">
+            <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 2a10 10 0 00-7.07 17.07M12 2a10 10 0 017.07 17.07M12 2v20M8 8l8 8M16 8l-8 8"/>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Sub-Header / Breadcrumb -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between text-xs text-slate-500 gap-2">
+      <div class="flex items-center gap-2">
+        <a href="#" class="hover:text-[#1B7853]">الرئيسية</a>
+        <span>/</span>
+        <a href="#" class="hover:text-[#1B7853]">لوحة التحكم</a>
+        <span>/</span>
+        <a href="#" class="hover:text-[#1B7853]">خدمات الهوية والمستفيد</a>
+        <span>/</span>
+        <span class="text-[#0E563B] font-bold">طلب ربط ودمج حساب سابق</span>
+      </div>
+      <div class="flex items-center gap-1.5 text-emerald-700 font-medium bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <span>مسار التدقيق المعتمد (Audited Linkage)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-8 w-full flex-1">
+    
+    <!-- View Switcher Tabs (Prototype Control) -->
+    <div class="flex items-center justify-between bg-white border border-slate-200 rounded-2xl p-2 shadow-sm mb-6">
+      <div class="flex items-center gap-1 sm:gap-2 w-full">
+        <button type="button" id="tabBtnSubmission" onclick="switchView('submission')" class="flex-1 py-2.5 px-3 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 bg-[#1B7853] text-white shadow-sm">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+          <span>1. شاشة تقديم طلب الربط (المدخلات)</span>
+        </button>
+
+        <button type="button" id="tabBtnDashboard" onclick="switchView('dashboard')" class="flex-1 py-2.5 px-3 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+          <span>2. لوحة إدارة ومعالجة الطلبات (بعد الموافقة والربط)</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- VIEW 1: SUBMISSION FORM WRAPPER -->
+    <div id="viewSubmission" class="space-y-6">
+      <!-- Service Header Banner -->
+      <div class="bg-gradient-to-l from-[#0E563B] via-[#1B7853] to-[#258B62] rounded-2xl p-6 sm:p-8 text-white shadow-lg mb-8 relative overflow-hidden">
+        <div class="absolute -left-10 -bottom-10 w-44 h-44 rounded-full bg-white/10 blur-xl pointer-events-none"></div>
+        
+        <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <span class="bg-[#C29B38] text-white text-[11px] font-bold px-3 py-0.5 rounded-full inline-block mb-2">خدمة رقابية معتمدة</span>
+            <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight">طلب ربط حسابات ومعاملات سابقة</h1>
+            <p class="text-sm text-emerald-100 mt-1 max-w-2xl leading-relaxed">
+              تتيح هذه الخدمة للمستفيد ضم وتوحيد سجلاته وطلباته ورخصه القديمة (الصادرة بجواز سفر، رقم حدود، أو هوية خليجية) تحت حسابه الحالي الموثق، دون الإخلال بصحة وتاريخ المعاملات.
+            </p>
+          </div>
+          <div class="hidden md:block">
+            <div class="w-16 h-16 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center p-3">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stepper Indicator -->
+      <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm mb-8">
+        <div class="grid grid-cols-3 gap-2 text-center text-xs sm:text-sm font-medium">
+          
+          <!-- Step 1: Active/Done -->
+          <div class="flex items-center gap-2 justify-center text-emerald-700">
+            <span class="w-6 h-6 rounded-full bg-[#1B7853] text-white flex items-center justify-center font-bold text-xs">✓</span>
+            <span class="font-bold">1. الهوية المعتمدة الحالية</span>
+          </div>
+
+          <!-- Step 2: In Progress -->
+          <div class="flex items-center gap-2 justify-center text-[#0E563B] border-x border-slate-200 px-2">
+            <span class="w-6 h-6 rounded-full bg-[#0E563B] text-white flex items-center justify-center font-bold text-xs ring-4 ring-emerald-100">2</span>
+            <span class="font-bold">2. بيانات الحساب السابق والمرفقات</span>
+          </div>
+
+          <!-- Step 3: Pending -->
+          <div class="flex items-center gap-2 justify-center text-slate-400">
+            <span class="w-6 h-6 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center font-bold text-xs">3</span>
+            <span>3. الإقرار والاعتماد</span>
+          </div>
+
+        </div>
+      </div>
+
+    <!-- Main Request Form -->
+    <form id="mergeForm" onsubmit="handleSubmit(event)" class="space-y-6">
+
+      <!-- Section 1: Current Master Identity (Read-only / Verified via Nafath) -->
+      <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#1B7853]"></span>
+            <h2 class="font-bold text-[#0E563B] text-base">أولاً: بيانات الحساب الحالي (الحساب المرجعي السائد)</h2>
+          </div>
+          <span class="text-xs bg-emerald-50 text-emerald-700 font-bold px-2.5 py-1 rounded-full border border-emerald-200 flex items-center gap-1">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            معتمد آلياً بالنظام وفق السلم السيادي للهويات
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
+          <div class="bg-[#F8FAF9] p-3 rounded-lg border border-slate-200">
+            <span class="text-slate-400 block mb-1">الاسم الكامل:</span>
+            <span class="font-bold text-slate-800 text-sm">محمد عبد الله القحطاني</span>
+          </div>
+          <div class="bg-[#F8FAF9] p-3 rounded-lg border border-slate-200">
+            <span class="text-slate-400 block mb-1">نوع ورقم الهوية الحالية:</span>
+            <span class="font-bold text-[#0E563B] text-sm">هوية وطنية - 1088492019</span>
+          </div>
+          <div class="bg-[#F8FAF9] p-3 rounded-lg border border-slate-200">
+            <span class="text-slate-400 block mb-1">حالة الحساب في منصة نما:</span>
+            <span class="font-bold text-emerald-700 text-sm flex items-center gap-1">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span>
+              نشط - موثق عبر النفاذ الوطني
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Previous Account Details to be Linked -->
+      <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#C29B38]"></span>
+            <h2 class="font-bold text-[#0E563B] text-base">ثانياً: بيانات الحساب / الوثيقة المراد ربطها</h2>
+          </div>
+          <span class="text-xs text-slate-400">يرجى كتابة البيانات كما كانت مسجلة بدقة</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Identity Type -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1.5">نوع الوثيقة السابقة <span class="text-rose-500">*</span></label>
+            <select id="docType" required class="w-full text-xs sm:text-sm bg-white border border-slate-300 rounded-lg px-3 py-2.5 focus:ring-2 focus:ring-[#1B7853] focus:border-[#1B7853] outline-none">
+              <option value="">-- اختر نوع الوثيقة --</option>
+              <option value="passport" selected>جواز سفر (Passport)</option>
+              <option value="border">رقم حدود / تأشيرة دخول</option>
+              <option value="gcc">هوية وطنية خليجية</option>
+              <option value="old_iqama">رقم إقامة سابق (قبل تعديل الوضع أو التجنيس)</option>
+            </select>
+          </div>
+
+          <!-- Identity Number -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1.5">رقم الوثيقة السابقة <span class="text-rose-500">*</span></label>
+            <input type="text" required placeholder="مثال: A12345678 أو 2xxxxxxxxx" value="N09817264" class="w-full text-xs sm:text-sm bg-white border border-slate-300 rounded-lg px-3 py-2.5 focus:ring-2 focus:ring-[#1B7853] focus:border-[#1B7853] outline-none font-mono">
+          </div>
+
+          <!-- Reason for Merge -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1.5">سبب طلب الربط <span class="text-rose-500">*</span></label>
+            <select required class="w-full text-xs sm:text-sm bg-white border border-slate-300 rounded-lg px-3 py-2.5 focus:ring-2 focus:ring-[#1B7853] focus:border-[#1B7853] outline-none">
+              <option value="">-- حدد السبب --</option>
+              <option value="1" selected>إصدار إقامة نظامية ونقل معلومات الجواز</option>
+              <option value="passport_change">تجديد أو تغيير رقم جواز السفر</option>
+              <option value="2">اكتساب الجنسية السعودية وإسقاط الإقامة</option>
+              <option value="3">استخراج إقامة عمل/استثمار لمواطن خليجي</option>
+              <option value="4">تسجيل سابق برقم حدود وتم إصدار هوية</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Contact Channels Management (Mobile & Email OTP Verification) -->
+      <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm space-y-5">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-100 pb-3 gap-2">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+            <h2 class="font-bold text-[#0E563B] text-base">ثالثاً: تحديد وتأكيد بيانات التواصل المعتمدة للمستفيد</h2>
+          </div>
+          <span class="text-xs text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200 font-medium">
+            متاح أرقام دولية ومحلية • يلزم التحقق برمز OTP فوري
+          </span>
+        </div>
+
+        <div class="text-xs text-slate-600 bg-emerald-50/50 p-3 rounded-lg border border-emerald-100 leading-relaxed">
+          <strong>تنويه تنظيمي:</strong> يمكنك اختيار رقم الجوال والبريد الإلكتروني المفضل لاعتماده في ملفك الموحد لتلقي التراخيص والقرارات والإشعارات، حتى وإن كان الرقم من خارج المملكة. لن يتم قبول أي وسيلة تواصل ما لم يتم التحقق من ملكيتها برمز التحقق (OTP).
+        </div>
+
+        <!-- 1. Mobile Phone Verification Block -->
+        <div class="border border-slate-200 rounded-xl p-4 bg-[#F8FAF9] space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <label class="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+              <span>رقم الجوال المعتمد للإشعارات الرسمية</span>
+              <span class="text-rose-500">*</span>
+            </label>
+            <span id="mobileStatusBadge" class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full border border-emerald-300 flex items-center gap-1">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              تم التحقق بنجاح ✓
+            </span>
+          </div>
+
+          <!-- Mobile Quick Selection Options -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+            <label class="flex items-center gap-2 p-2.5 bg-white border border-emerald-500 rounded-lg cursor-pointer">
+              <input type="radio" name="mobileOption" checked onchange="handleMobileOptionChange(this, '+966', '504912882')" class="text-[#1B7853] focus:ring-[#1B7853]">
+              <div>
+                <span class="font-bold text-slate-800 block">جوال الحساب الحالي</span>
+                <span class="text-[11px] text-slate-500" dir="ltr">+966 50 491 2882</span>
+              </div>
+            </label>
+
+            <label class="flex items-center gap-2 p-2.5 bg-white border border-slate-200 hover:border-slate-300 rounded-lg cursor-pointer">
+              <input type="radio" name="mobileOption" onchange="handleMobileOptionChange(this, '+971', '509827110')" class="text-[#1B7853] focus:ring-[#1B7853]">
+              <div>
+                <span class="font-bold text-slate-800 block">جوال الحساب السابق (دولي)</span>
+                <span class="text-[11px] text-slate-500" dir="ltr">+971 50 982 7110</span>
+              </div>
+            </label>
+
+            <label class="flex items-center gap-2 p-2.5 bg-white border border-slate-200 hover:border-slate-300 rounded-lg cursor-pointer">
+              <input type="radio" name="mobileOption" onchange="handleMobileOptionChange(this, '', '')" class="text-[#1B7853] focus:ring-[#1B7853]">
+              <div>
+                <span class="font-bold text-slate-800 block">إدخال رقم هاتف آخر</span>
+                <span class="text-[11px] text-slate-500">محلي أو دولي جديد</span>
+              </div>
+            </label>
+          </div>
+
+          <!-- Mobile Input with Country Code -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 pt-1">
+            <div class="flex items-center border border-slate-300 rounded-lg bg-white overflow-hidden flex-1 focus-within:ring-2 focus-within:ring-[#1B7853]">
+              <!-- Country Code Selector -->
+              <select id="countryCodeSelect" class="bg-slate-50 border-l border-slate-200 text-xs py-2.5 px-3 outline-none text-slate-700 font-mono" dir="ltr">
+                <option value="+966" selected>🇸🇦 +966 (السعودية)</option>
+                <option value="+971">🇦🇪 +971 (الإمارات)</option>
+                <option value="+965">🇰🇼 +965 (الكويت)</option>
+                <option value="+973">🇧🇭 +973 (البحرين)</option>
+                <option value="+968">🇴🇲 +968 (عُمان)</option>
+                <option value="+974">🇶🇦 +974 (قطر)</option>
+                <option value="+20">🇪🇬 +20 (مصر)</option>
+                <option value="+962">🇯🇴 +962 (الأردن)</option>
+                <option value="+44">🇬🇧 +44 (بريطانيا)</option>
+                <option value="+1">🇺🇸 +1 (أمريكا / كندا)</option>
+              </select>
+              <!-- Phone Input -->
+              <input type="tel" id="mobileInput" value="504912882" placeholder="5xxxxxxxx" class="w-full text-xs sm:text-sm px-3 py-2.5 outline-none font-mono" dir="ltr">
+            </div>
+
+            <button type="button" onclick="sendMobileOTP()" id="btnSendMobileOtp" class="px-4 py-2.5 bg-[#0E563B] hover:bg-[#146344] text-white text-xs font-bold rounded-lg transition-colors whitespace-nowrap">
+              إرسال رمز التحقق OTP
+            </button>
+          </div>
+
+          <!-- Inline OTP Verification Box (Hidden by default) -->
+          <div id="mobileOtpBox" class="hidden bg-emerald-50 border border-emerald-200 rounded-lg p-3 text-xs space-y-2">
+            <div class="flex items-center justify-between text-emerald-900">
+              <span>تم إرسال رمز التحقق برسالة نصية دولية (SMS) إلى رقمكم.</span>
+              <span class="text-slate-400 font-mono">01:59</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <input type="text" id="mobileOtpInput" placeholder="أدخل الرمز (مثال: 1234)" maxlength="6" class="bg-white border border-slate-300 rounded px-3 py-1.5 text-center font-mono font-bold text-sm outline-none focus:ring-2 focus:ring-[#1B7853]" dir="ltr">
+              <button type="button" onclick="verifyMobileOTP()" class="px-4 py-1.5 bg-[#1B7853] text-white rounded font-bold hover:bg-[#146344]">تأكيد الرمز</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Email Address Verification Block -->
+        <div class="border border-slate-200 rounded-xl p-4 bg-[#F8FAF9] space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <label class="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+              <span>البريد الإلكتروني المعتمد للمراسلات والتراخيص</span>
+              <span class="text-rose-500">*</span>
+            </label>
+            <span id="emailStatusBadge" class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full border border-emerald-300 flex items-center gap-1">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              تم التحقق بنجاح ✓
+            </span>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+            <input type="email" id="emailInput" value="m.qahtani@example.com" placeholder="name@domain.com" class="flex-1 text-xs sm:text-sm bg-white border border-slate-300 rounded-lg px-3 py-2.5 focus:ring-2 focus:ring-[#1B7853] outline-none" dir="ltr">
+            <button type="button" onclick="sendEmailOTP()" id="btnSendEmailOtp" class="px-4 py-2.5 bg-[#0E563B] hover:bg-[#146344] text-white text-xs font-bold rounded-lg transition-colors whitespace-nowrap">
+              إرسال رمز التحقق للبريد
+            </button>
+          </div>
+
+          <!-- Inline Email OTP Box (Hidden by default) -->
+          <div id="emailOtpBox" class="hidden bg-emerald-50 border border-emerald-200 rounded-lg p-3 text-xs space-y-2">
+            <div class="flex items-center justify-between text-emerald-900">
+              <span>تم إرسال رمز التحقق إلى عنوان البريد الإلكتروني.</span>
+              <span class="text-slate-400 font-mono">01:59</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <input type="text" id="emailOtpInput" placeholder="أدخل رمز البريد (مثال: 5678)" maxlength="6" class="bg-white border border-slate-300 rounded px-3 py-1.5 text-center font-mono font-bold text-sm outline-none focus:ring-2 focus:ring-[#1B7853]" dir="ltr">
+              <button type="button" onclick="verifyEmailOTP()" class="px-4 py-1.5 bg-[#1B7853] text-white rounded font-bold hover:bg-[#146344]">تأكيد برمز البريد</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Section 4: Official Supporting Documents (The Maker-Checker Evidence) -->
+      <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-teal-600"></span>
+            <h2 class="font-bold text-[#0E563B] text-base">رابعاً: المستندات الثبوتية الإلزامية</h2>
+          </div>
+          <span class="text-xs text-rose-600 font-medium">مستندات رسمية صادرة من الجوازات أو الجهات المختصة</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Document 1: Passport / Identity Copy -->
+          <div class="border-2 border-dashed border-slate-300 hover:border-[#1B7853] rounded-xl p-4 text-center bg-[#F8FAF9] transition-all cursor-pointer">
+            <div class="flex flex-col items-center justify-center space-y-2">
+              <div class="w-10 h-10 rounded-full bg-emerald-100 text-[#1B7853] flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+              </div>
+              <div class="text-xs font-bold text-slate-800">صورة الوثيقة السابقة (جواز السفر / الحدود) <span class="text-rose-500">*</span></div>
+              <div class="text-[11px] text-slate-400">PDF, PNG, JPG (الحد الأقصى 5MB)</div>
+              <div class="mt-2 text-xs text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200 flex items-center gap-1">
+                <span>✓ تم إرفاق: passport_copy_scan.pdf</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Document 2: Official Linkage Proof (Jawazat Print / Transfer Info) -->
+          <div class="border-2 border-dashed border-[#1B7853] rounded-xl p-4 text-center bg-emerald-50/40 transition-all cursor-pointer">
+            <div class="flex flex-col items-center justify-center space-y-2">
+              <div class="w-10 h-10 rounded-full bg-[#1B7853] text-white flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              </div>
+              <div class="text-xs font-bold text-[#0E563B]">إفادة نقل المعلومات أو برنت الجوازات <span class="text-rose-500">*</span></div>
+              <div class="text-[11px] text-slate-500">إثبات نقل بيانات الجواز إلى رقم الإقامة/الهوية من منصة مقيم أو أبشر</div>
+              <div class="mt-2 text-xs text-emerald-800 bg-emerald-100/80 px-2.5 py-1 rounded border border-emerald-300 font-bold flex items-center gap-1">
+                <span>✓ تم إرفاق: jawazat_transfer_record.pdf</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 5: Legal Undertaking & Declaration (Irrevocable) -->
+      <div class="bg-amber-50/70 border border-amber-200 rounded-xl p-5 shadow-sm space-y-3">
+        <div class="flex items-center gap-2 text-amber-900 font-bold text-sm">
+          <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          الإقرار والتعهد النظامي الإلزامي
+        </div>
+
+        <p class="text-xs text-amber-950/90 leading-relaxed bg-white p-3.5 rounded-lg border border-amber-200">
+          "أقر أنا مقدم الطلب بصفتي صاحب الهوية الموثقة أعلاه، بأن الحساب والوثيقة السابقة المراد ربطها تخصني شخصياً، وأن جميع المستندات والإفادات المرفقة صحيحة ومطابقة للواقع، وأتحمل كامل المسؤولية الجنائية والنظامية أمام منصة نما والجهات القضائية المختصة في المملكة في حال ثبوت خلاف ذلك، وأفوض المنصة بربط كافة المعاملات والتراخيص السابقة بملف المستفيد الموحد الخاص بي، مع علمي التام بأنه سيتم تعطيل الدخول المباشر بالوثيقة القديمة نهائياً."
+        </p>
+
+        <label class="flex items-start gap-3 cursor-pointer pt-1">
+          <input type="checkbox" id="legalConsent" required class="mt-1 w-4 h-4 text-[#1B7853] rounded border-slate-300 focus:ring-[#1B7853]">
+          <span class="text-xs font-bold text-slate-800">
+            أوافق على صيغة التعهد القانوني أعلاه، وأؤكد رغبتي في ربط المعاملات تحت حسابي المعتمد.
+          </span>
+        </label>
+      </div>
+
+      <!-- Actions Buttons Toolbar -->
+      <div class="flex flex-col-reverse sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-200">
+        <button type="button" class="w-full sm:w-auto px-6 py-2.5 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-100 text-xs sm:text-sm font-semibold transition-colors">
+          إلغاء والعودة للوحة التحكم
+        </button>
+
+        <button type="submit" class="w-full sm:w-auto px-8 py-3 rounded-lg bg-[#1B7853] hover:bg-[#146344] text-white text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+          <span>إرسال الطلب لفريق التدقيق والاعتماد</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </button>
+      </div>
+
+    </form>
+    </div> <!-- END VIEW 1 (SUBMISSION) -->
+
+    <!-- VIEW 2: UNIFIED REQUESTS MANAGEMENT DASHBOARD (POST-APPROVAL) -->
+    <div id="viewDashboard" class="hidden space-y-6 animate-in fade-in duration-200">
+      
+      <!-- Management Banner -->
+      <div class="bg-gradient-to-l from-[#0E563B] via-[#1B7853] to-[#258B62] rounded-2xl p-6 text-white shadow-lg relative overflow-hidden">
+        <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="bg-emerald-400 text-slate-950 text-[11px] font-bold px-3 py-0.5 rounded-full inline-block">حساب موحد نشط</span>
+              <span class="text-xs text-emerald-100">تم اعتماد ربط الهويات بموجب القرار الإداري: <strong>REF-LINK-2026-4401</strong></span>
+            </div>
+            <h1 class="text-2xl font-extrabold tracking-tight">إدارة طلباتي وتراخيصي الموحدة</h1>
+            <p class="text-xs sm:text-sm text-emerald-100 mt-1 max-w-3xl leading-relaxed">
+              تُعرض هنا جميع المعاملات الصادرة بهويتك الحالية، بالإضافة إلى المعاملات السابقة المربوطة من (جواز السفر: N09817264). يمكنك استعراض وتجديد ومتابعة كافة الطلبات مباشرة من هذه اللوحة.
+            </p>
+          </div>
+          <button onclick="openRenewalModal('LIC-AGRI-2024-091', 'ترخيص مزرعة إنتاج نباتي')" class="bg-white hover:bg-emerald-50 text-[#0E563B] font-bold text-xs px-4 py-2.5 rounded-xl shadow-md transition-all flex items-center gap-1.5 whitespace-nowrap self-start md:self-auto">
+            <svg class="w-4 h-4 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+            <span>طلب تجديد رخصة سابقة</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- KPI Summary Cards -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 text-right">
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+          <span class="text-xs text-slate-500 block mb-1">إجمالي المعاملات المربوطة</span>
+          <div class="text-2xl font-black text-[#0E563B] font-mono">3</div>
+          <span class="text-[11px] text-emerald-700 font-medium">من هويتين مختلفتين</span>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+          <span class="text-xs text-slate-500 block mb-1">تراخيص سارية المفعول</span>
+          <div class="text-2xl font-black text-emerald-600 font-mono">1</div>
+          <span class="text-[11px] text-slate-500">جاهزة للتجديد والطباعة</span>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+          <span class="text-xs text-slate-500 block mb-1">طلبات تحت الدراسة</span>
+          <div class="text-2xl font-black text-blue-600 font-mono">1</div>
+          <span class="text-[11px] text-blue-700 font-medium">محدثة بالهوية الحالية</span>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+          <span class="text-xs text-slate-500 block mb-1">فواتير بانتظار السداد</span>
+          <div class="text-2xl font-black text-amber-600 font-mono">1</div>
+          <span class="text-[11px] text-amber-700 font-medium">سداد عبر نظام سداد</span>
+        </div>
+      </div>
+
+      <!-- Filter and Search Toolbar -->
+      <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <!-- Filter Buttons by Identity Origin -->
+          <div class="flex flex-wrap items-center gap-1.5 text-xs font-bold">
+            <span class="text-slate-500 text-xs pl-1">مصدر المعاملة:</span>
+            <button type="button" onclick="filterTransactions('all')" id="filterBtnAll" class="px-3 py-1.5 rounded-lg bg-[#1B7853] text-white">
+              عرض كافة المعاملات (3)
+            </button>
+            <button type="button" onclick="filterTransactions('passport')" id="filterBtnPassport" class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200">
+              معاملات جواز السفر N09817264 (2)
+            </button>
+            <button type="button" onclick="filterTransactions('national')" id="filterBtnNational" class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200">
+              معاملات الهوية الحالية 1088492019 (1)
+            </button>
+          </div>
+
+          <!-- Search input -->
+          <div class="relative w-full sm:w-64">
+            <input type="text" placeholder="بحث برقم الطلب أو الخدمة..." class="w-full text-xs bg-slate-50 border border-slate-200 rounded-lg pr-8 pl-3 py-2 outline-none focus:ring-2 focus:ring-[#1B7853]">
+            <svg class="w-4 h-4 text-slate-400 absolute right-2.5 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unified Requests Table Card -->
+      <div class="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-right text-xs sm:text-sm">
+            <thead class="bg-[#F8FAF9] text-[#0E563B] font-bold border-b border-slate-200">
+              <tr>
+                <th class="p-3.5">رقم المعاملة / الرخصة</th>
+                <th class="p-3.5">الخدمة والقطاع</th>
+                <th class="p-3.5">الوثيقة المصدر (وقت الإنشاء)</th>
+                <th class="p-3.5">حالة الطلب</th>
+                <th class="p-3.5 text-center">إدارة المعاملة والإجراءات</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100" id="transactionsTableBody">
+              
+              <!-- Transaction 1: Active License from Old Passport -->
+              <tr class="hover:bg-slate-50 transition-colors item-row item-passport">
+                <td class="p-3.5 font-mono font-bold text-slate-800">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span>LIC-AGRI-2024-091</span>
+                  </div>
+                  <span class="text-[10px] text-slate-400 block font-sans">تاريخ الإصدار: 2024-11-12</span>
+                </td>
+                <td class="p-3.5">
+                  <div class="font-bold text-slate-800">ترخيص مزرعة إنتاج نباتي</div>
+                  <span class="text-xs text-slate-500">وكالة الزراعة • منطقة القصيم</span>
+                </td>
+                <td class="p-3.5">
+                  <div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-50 text-amber-900 border border-amber-200 font-mono text-xs">
+                    <svg class="w-3.5 h-3.5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    <span>جواز سفر: N09817264</span>
+                  </div>
+                  <span class="text-[10px] text-slate-400 block mt-0.5">مربوط ومجمد الدخول</span>
+                </td>
+                <td class="p-3.5">
+                  <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">
+                    ساري المفعول
+                  </span>
+                  <span class="text-[11px] text-slate-500 block mt-0.5">ينتهي: 2026-12-30</span>
+                </td>
+                <td class="p-3.5 text-center">
+                  <div class="flex items-center justify-center gap-1.5">
+                    <button onclick="openRenewalModal('LIC-AGRI-2024-091', 'ترخيص مزرعة إنتاج نباتي')" class="px-2.5 py-1.5 bg-[#1B7853] hover:bg-[#146344] text-white text-xs font-bold rounded-lg transition-colors flex items-center gap-1">
+                      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                      <span>تجديد الترخيص</span>
+                    </button>
+                    <button onclick="openCertModal('LIC-AGRI-2024-091', 'ترخيص مزرعة إنتاج نباتي', 'جواز سفر N09817264')" class="px-2.5 py-1.5 border border-slate-300 hover:bg-slate-100 text-slate-700 text-xs font-medium rounded-lg transition-colors">
+                      عرض الشهادة
+                    </button>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Transaction 2: In-Flight Request from Old Passport -->
+              <tr class="hover:bg-slate-50 transition-colors item-row item-passport">
+                <td class="p-3.5 font-mono font-bold text-slate-800">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                    <span>REQ-WAT-2026-110</span>
+                  </div>
+                  <span class="text-[10px] text-slate-400 block font-sans">تاريخ التقديم: 2026-09-18</span>
+                </td>
+                <td class="p-3.5">
+                  <div class="font-bold text-slate-800">تصريح حفر بئر جوفي بديل</div>
+                  <span class="text-xs text-slate-500">وكالة المياه • رخصة مصادر مائية</span>
+                </td>
+                <td class="p-3.5">
+                  <div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-50 text-amber-900 border border-amber-200 font-mono text-xs">
+                    <span>جواز سفر: N09817264</span>
+                  </div>
+                  <div class="text-[11px] text-blue-700 font-medium mt-1 flex items-center gap-1">
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <span>حُولت هويته آلياً للهوية الحالية</span>
+                  </div>
+                </td>
+                <td class="p-3.5">
+                  <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-800 border border-blue-200">
+                    تحت الدراسة الفنية
+                  </span>
+                  <span class="text-[11px] text-slate-500 block mt-0.5">لدى مهندس التدقيق الميداني</span>
+                </td>
+                <td class="p-3.5 text-center">
+                  <div class="flex items-center justify-center gap-1.5">
+                    <button onclick="openTrackModal('REQ-WAT-2026-110', 'تصريح حفر بئر جوفي بديل')" class="px-2.5 py-1.5 bg-[#0E563B] hover:bg-[#146344] text-white text-xs font-bold rounded-lg transition-colors flex items-center gap-1">
+                      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                      <span>متابعة المسار والتدقيق</span>
+                    </button>
+                    <button onclick="alert('تم فتح شاشة إرفاق النواقص للمستفيد')" class="px-2.5 py-1.5 border border-slate-300 hover:bg-slate-100 text-slate-700 text-xs font-medium rounded-lg transition-colors">
+                      إرفاق نواقص
+                    </button>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Transaction 3: New Request from Current National ID -->
+              <tr class="hover:bg-slate-50 transition-colors item-row item-national">
+                <td class="p-3.5 font-mono font-bold text-slate-800">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                    <span>REQ-ENV-2026-882</span>
+                  </div>
+                  <span class="text-[10px] text-slate-400 block font-sans">تاريخ التقديم: 2026-10-14</span>
+                </td>
+                <td class="p-3.5">
+                  <div class="font-bold text-slate-800">تصريح بيئي تشغيلي للأنشطة التنموية</div>
+                  <span class="text-xs text-slate-500">المركز الوطني للرقابة على الالتزام البيئي</span>
+                </td>
+                <td class="p-3.5">
+                  <div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-900 border border-emerald-200 font-mono text-xs">
+                    <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    <span>هوية وطنية: 1088492019</span>
+                  </div>
+                  <span class="text-[10px] text-slate-400 block mt-0.5">الحساب المرجعي السائد</span>
+                </td>
+                <td class="p-3.5">
+                  <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800 border border-amber-200">
+                    بانتظار سداد المقابل
+                  </span>
+                  <span class="text-[11px] text-slate-500 block mt-0.5">فاتورة سداد: 90218201</span>
+                </td>
+                <td class="p-3.5 text-center">
+                  <div class="flex items-center justify-center gap-1.5">
+                    <button onclick="alert('تم توجيهك لبوابة الدفع الإلكتروني سداد')" class="px-3 py-1.5 bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold rounded-lg transition-colors flex items-center gap-1 shadow-sm">
+                      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+                      <span>سداد الفاتورة (350 ر.س)</span>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Table Footer / Regulatory Safeguard Callout -->
+        <div class="bg-emerald-50/70 border-t border-emerald-100 p-3.5 text-xs text-emerald-900 flex flex-col sm:flex-row items-center justify-between gap-2">
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-emerald-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <span><strong>ضمانة قانونية:</strong> كافة المعاملات السابقة الصادرة بجواز السفر تظل معتمدة نظامياً ومحمية بحجيتها التاريخية. أي طلب تجديد أو تعديل سيصدر تلقائياً بهويتك الوطنية المعتمدة.</span>
+          </div>
+          <span class="font-mono text-[11px] text-emerald-800">إجمالي السجلات: 3</span>
+        </div>
+      </div>
+
+    </div> <!-- END VIEW 2 (DASHBOARD) -->
+
+  </main>
+
+  <!-- Interactive Renewal Modal (Simulating Post-Merge Renewal Action) -->
+  <div id="renewalModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 space-y-4 shadow-2xl text-right animate-in fade-in zoom-in duration-150">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">
+            ↻
+          </div>
+          <h3 class="font-bold text-[#0E563B] text-base">طلب تجديد ترخيص صادر بوثيقة سابقة</h3>
+        </div>
+        <button onclick="closeRenewalModal()" class="text-slate-400 hover:text-slate-600 text-lg">✕</button>
+      </div>
+
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-3.5 text-xs text-amber-950 space-y-2">
+        <div class="font-bold text-amber-900 flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          كيف يتم التعامل مع وثيقة التجديد نظامياً؟
+        </div>
+        <p class="leading-relaxed">
+          نظراً لأن الترخيص الأصلي صدر سابقاً بموجب جواز السفر (N09817264)، فإن النظام سيقوم تلقائياً بـ:
+        </p>
+        <ul class="list-disc list-inside space-y-1 text-slate-700">
+          <li>إصدار شهادة التجديد الجديدة باسم: <strong>محمد عبد الله القحطاني</strong> ورقم الهوية: <strong>1088492019</strong>.</li>
+          <li>تدوين حاشية رسمية في الشهادة: <em>"تجديد للترخيص رقم LIC-AGRI-2024-091 الصادر سابقاً بموجب جواز السفر N09817264"</em>.</li>
+          <li>عدم المساس بالبيانات التاريخية للترخيص الأول لحمايته من أي بطلان.</li>
+        </ul>
+      </div>
+
+      <div class="text-xs space-y-2 bg-[#F8FAF9] p-3 rounded-lg border border-slate-200 font-mono">
+        <div class="flex justify-between"><span class="font-sans text-slate-400">رقم الترخيص الحالي:</span> <strong id="renewalRefNum">LIC-AGRI-2024-091</strong></div>
+        <div class="flex justify-between"><span class="font-sans text-slate-400">الهوية المعتمدة للتجديد:</span> <strong class="text-emerald-700">هوية وطنية - 1088492019 (نفاذ)</strong></div>
+        <div class="flex justify-between"><span class="font-sans text-slate-400">مدة التجديد المطلوبة:</span> <span class="text-slate-800">3 سنوات (زراعي)</span></div>
+      </div>
+
+      <div class="flex items-center justify-end gap-2 pt-2 border-t border-slate-100">
+        <button onclick="closeRenewalModal()" class="px-4 py-2 border border-slate-300 rounded-lg text-xs font-semibold hover:bg-slate-50">إلغاء</button>
+        <button onclick="confirmRenewal()" class="px-5 py-2 bg-[#1B7853] hover:bg-[#146344] text-white rounded-lg text-xs font-bold">تأكيد ومتابعة التجديد</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Tracking Modal (In-Flight Request Journey) -->
+  <div id="trackModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 space-y-4 shadow-2xl text-right animate-in fade-in zoom-in duration-150">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <div>
+          <h3 class="font-bold text-[#0E563B] text-base">مسار المعاملة الجارية وحركات التدقيق</h3>
+          <span class="text-xs text-slate-500 font-mono" id="trackRefNum">REQ-WAT-2026-110</span>
+        </div>
+        <button onclick="closeTrackModal()" class="text-slate-400 hover:text-slate-600 text-lg">✕</button>
+      </div>
+
+      <!-- Timeline Steps -->
+      <div class="space-y-3 text-xs pr-2 border-r-2 border-emerald-500 mr-2">
+        <div class="relative pr-3">
+          <div class="absolute -right-5 top-0.5 w-3 h-3 rounded-full bg-emerald-600 ring-4 ring-emerald-100"></div>
+          <div class="font-bold text-slate-800">تحديث هوية مقدم الطلب بموجب قرار الربط الإداري</div>
+          <span class="text-[11px] text-slate-400">2026-10-20 10:15 • محرك النظام الآلي</span>
+          <p class="text-slate-600 mt-0.5">تم ربط المعاملة بالهوية الوطنية الحالية (1088492019) وتوجيه إشعار لمدقق المعاملة بإصدار القرار النهائي باسم الهوية المعتمدة.</p>
+        </div>
+
+        <div class="relative pr-3">
+          <div class="absolute -right-5 top-0.5 w-3 h-3 rounded-full bg-slate-300"></div>
+          <div class="font-bold text-slate-800">المعاينة الميدانية ومطابقة إحداثيات البئر</div>
+          <span class="text-[11px] text-slate-400">2026-10-02 11:30 • فرع الوزارة بالقصيم</span>
+        </div>
+
+        <div class="relative pr-3">
+          <div class="absolute -right-5 top-0.5 w-3 h-3 rounded-full bg-slate-300"></div>
+          <div class="font-bold text-slate-800">تقديم الطلب الأصلي بموجب جواز السفر (N09817264)</div>
+          <span class="text-[11px] text-slate-400">2026-09-18 09:20 • منصة نما</span>
+        </div>
+      </div>
+
+      <div class="flex justify-end pt-2 border-t border-slate-100">
+        <button onclick="closeTrackModal()" class="px-5 py-2 bg-[#0E563B] text-white rounded-lg text-xs font-bold">إغلاق</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Certificate Preview Modal -->
+  <div id="certModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 space-y-4 shadow-2xl text-center animate-in fade-in zoom-in duration-150">
+      <div class="w-14 h-14 rounded-full bg-emerald-50 text-emerald-700 mx-auto flex items-center justify-center text-xl font-bold border border-emerald-200">
+        📜
+      </div>
+      <div>
+        <h3 class="text-base font-bold text-[#0E563B]">معاينة وثيقة الترخيص الأصلية</h3>
+        <p class="text-xs text-slate-500 mt-1" id="certSubtitle">ترخيص مزرعة إنتاج نباتي</p>
+      </div>
+
+      <div class="border-2 border-dashed border-emerald-300 bg-emerald-50/40 rounded-xl p-4 text-xs text-right space-y-2 font-mono">
+        <div class="flex justify-between border-b border-emerald-200/60 pb-1.5"><span class="font-sans text-slate-500">رقم الترخيص:</span> <strong>LIC-AGRI-2024-091</strong></div>
+        <div class="flex justify-between border-b border-emerald-200/60 pb-1.5"><span class="font-sans text-slate-500">اسم صاحب الترخيص:</span> <strong>محمد عبد الله القحطاني</strong></div>
+        <div class="flex justify-between border-b border-emerald-200/60 pb-1.5"><span class="font-sans text-slate-500">الوثيقة المسجلة بالشهادة:</span> <strong class="text-amber-800 font-bold">جواز سفر (N09817264)</strong></div>
+        <div class="flex justify-between"><span class="font-sans text-slate-500">الحالة النظامية:</span> <span class="text-emerald-700 font-bold font-sans">معتمد ومحفوظ الحجية التاريخية ✓</span></div>
+      </div>
+
+      <div class="flex items-center justify-center gap-2">
+        <button onclick="alert('تم تنزيل النسخة الأصلية بصيغة PDF')" class="px-4 py-2 bg-[#1B7853] text-white rounded-lg text-xs font-bold hover:bg-[#146344]">تحميل الوثيقة PDF</button>
+        <button onclick="closeCertModal()" class="px-4 py-2 border border-slate-300 rounded-lg text-xs font-semibold">إغلاق</button>
+      </div>
+    </div>
+  </div>
+
+  </main>
+
+  <!-- Success Confirmation Modal (Hidden by Default) -->
+  <div id="successModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 text-center space-y-4 shadow-2xl animate-in fade-in zoom-in duration-200">
+      <div class="w-16 h-16 rounded-full bg-emerald-100 text-[#1B7853] mx-auto flex items-center justify-center">
+        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-bold text-[#0E563B]">تم استلام طلب الربط بنجاح</h3>
+        <p class="text-xs text-slate-500 mt-1">تم توجيه طلبكم إلى قسم التدقيق والرقابة الثنائية في منصة نما</p>
+      </div>
+
+      <div class="bg-[#F8FAF9] border border-slate-200 rounded-xl p-3 text-xs space-y-1.5 text-right font-mono">
+        <div class="flex justify-between"><span class="text-slate-400 font-sans">رقم الطلب المرجعي:</span> <strong class="text-slate-800">REQ-LINK-2026-4401</strong></div>
+        <div class="flex justify-between"><span class="text-slate-400 font-sans">تاريخ التقديم:</span> <span class="text-slate-700">2026-10-20 10:15</span></div>
+        <div class="flex justify-between"><span class="text-slate-400 font-sans">مسار المعالجة:</span> <span class="text-emerald-700 font-bold font-sans">فحص ومطابقة (Maker-Checker)</span></div>
+      </div>
+
+      <p class="text-[11px] text-slate-400">
+        سيتم إشعاركم برسالة نصية (SMS) فور انتهاء التدقيق ومطابقة الوثائق الرسمية مع الجوازات.
+      </p>
+
+      <button onclick="closeModal()" class="w-full bg-[#1B7853] hover:bg-[#146344] text-white font-bold py-2.5 rounded-lg text-xs transition-colors">
+        العودة لقائمة الطلبات
+      </button>
+    </div>
+  </div>
+
+  <!-- Standard Naama Footer (Matching Screenshot) -->
+  <footer class="bg-white border-t border-slate-200 mt-12 relative z-20">
+    <div class="max-w-7xl mx-auto px-4 py-6 text-center text-xs text-slate-500 space-y-1">
+      <div class="font-medium text-slate-700">وكالة الوزارة لتقنية المعلومات والتحول الرقمي</div>
+      <div>جميع الحقوق محفوظة لوزارة البيئة والمياه والزراعة © 2026</div>
+    </div>
+  </footer>
+
+  <!-- Naama Floating Support & Accessibility Widgets (Matching Screenshot) -->
+  <div class="fixed bottom-6 left-6 flex flex-col gap-2 z-40">
+    <button title="إمكانية الوصول" class="w-10 h-10 rounded-lg bg-[#0E563B] text-white flex items-center justify-center shadow-lg hover:bg-[#146344] transition-all">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+    </button>
+    <button title="قراءة صوتية" class="w-10 h-10 rounded-lg bg-[#0E563B] text-white flex items-center justify-center shadow-lg hover:bg-[#146344] transition-all">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+    </button>
+  </div>
+
+  <div class="fixed bottom-6 right-6 flex flex-col items-center gap-2 z-40">
+    <button title="منصة نما" class="w-12 h-12 rounded-full bg-[#1B7853] text-white flex items-center justify-center shadow-xl hover:scale-105 transition-transform border-2 border-white">
+      <span class="text-xs font-bold">نماء</span>
+    </button>
+    <button title="المحادثة الفورية للدعم" class="w-12 h-12 rounded-full bg-[#0E563B] text-white flex items-center justify-center shadow-xl hover:scale-105 transition-transform">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+    </button>
+  </div>
+
+  <!-- Interactive Script -->
+  <script>
+    function handleMobileOptionChange(radio, countryCode, number) {
+      const select = document.getElementById('countryCodeSelect');
+      const input = document.getElementById('mobileInput');
+      const badge = document.getElementById('mobileStatusBadge');
+      const otpBox = document.getElementById('mobileOtpBox');
+
+      otpBox.classList.add('hidden');
+
+      if (countryCode && number) {
+        select.value = countryCode;
+        input.value = number;
+        badge.innerHTML = `<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> تم التحقق مسبقاً ✓`;
+        badge.className = "text-xs font-bold text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full border border-emerald-300 flex items-center gap-1";
+      } else {
+        input.value = '';
+        input.focus();
+        badge.innerHTML = `بانتظار التحقق ⚠️`;
+        badge.className = "text-xs font-bold text-amber-700 bg-amber-100 px-2.5 py-0.5 rounded-full border border-amber-300 flex items-center gap-1";
+      }
+    }
+
+    function sendMobileOTP() {
+      const otpBox = document.getElementById('mobileOtpBox');
+      otpBox.classList.remove('hidden');
+      document.getElementById('mobileOtpInput').focus();
+    }
+
+    function verifyMobileOTP() {
+      const otpInput = document.getElementById('mobileOtpInput').value;
+      if (!otpInput) {
+        alert('يرجى إدخال رمز التحقق OTP');
+        return;
+      }
+      const badge = document.getElementById('mobileStatusBadge');
+      badge.innerHTML = `<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> تم التحقق بنجاح ✓`;
+      badge.className = "text-xs font-bold text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full border border-emerald-300 flex items-center gap-1";
+      document.getElementById('mobileOtpBox').classList.add('hidden');
+      alert('تم التحقق من ملكية رقم الجوال بنجاح!');
+    }
+
+    function sendEmailOTP() {
+      const otpBox = document.getElementById('emailOtpBox');
+      otpBox.classList.remove('hidden');
+      document.getElementById('emailOtpInput').focus();
+    }
+
+    function verifyEmailOTP() {
+      const otpInput = document.getElementById('emailOtpInput').value;
+      if (!otpInput) {
+        alert('يرجى إدخال رمز التحقق المرسل للبريد الإلكتروني');
+        return;
+      }
+      const badge = document.getElementById('emailStatusBadge');
+      badge.innerHTML = `<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> تم التحقق بنجاح ✓`;
+      badge.className = "text-xs font-bold text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full border border-emerald-300 flex items-center gap-1";
+      document.getElementById('emailOtpBox').classList.add('hidden');
+      alert('تم التحقق من ملكية البريد الإلكتروني بنجاح!');
+    }
+
+    function switchView(view) {
+      const vSub = document.getElementById('viewSubmission');
+      const vDash = document.getElementById('viewDashboard');
+      const btnSub = document.getElementById('tabBtnSubmission');
+      const btnDash = document.getElementById('tabBtnDashboard');
+
+      if (view === 'submission') {
+        vSub.classList.remove('hidden');
+        vDash.classList.add('hidden');
+        btnSub.className = "flex-1 py-2.5 px-3 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 bg-[#1B7853] text-white shadow-sm";
+        btnDash.className = "flex-1 py-2.5 px-3 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700";
+      } else {
+        vSub.classList.add('hidden');
+        vDash.classList.remove('hidden');
+        btnDash.className = "flex-1 py-2.5 px-3 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 bg-[#1B7853] text-white shadow-sm";
+        btnSub.className = "flex-1 py-2.5 px-3 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700";
+      }
+    }
+
+    function filterTransactions(type) {
+      const rows = document.querySelectorAll('.item-row');
+      const btnAll = document.getElementById('filterBtnAll');
+      const btnPass = document.getElementById('filterBtnPassport');
+      const btnNat = document.getElementById('filterBtnNational');
+
+      btnAll.className = "px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200";
+      btnPass.className = "px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200";
+      btnNat.className = "px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200";
+
+      if (type === 'all') {
+        btnAll.className = "px-3 py-1.5 rounded-lg bg-[#1B7853] text-white";
+        rows.forEach(r => r.classList.remove('hidden'));
+      } else if (type === 'passport') {
+        btnPass.className = "px-3 py-1.5 rounded-lg bg-[#1B7853] text-white";
+        rows.forEach(r => {
+          if (r.classList.contains('item-passport')) r.classList.remove('hidden');
+          else r.classList.add('hidden');
+        });
+      } else if (type === 'national') {
+        btnNat.className = "px-3 py-1.5 rounded-lg bg-[#1B7853] text-white";
+        rows.forEach(r => {
+          if (r.classList.contains('item-national')) r.classList.remove('hidden');
+          else r.classList.add('hidden');
+        });
+      }
+    }
+
+    function openRenewalModal(ref, title) {
+      document.getElementById('renewalRefNum').innerText = ref;
+      document.getElementById('renewalModal').classList.remove('hidden');
+    }
+
+    function closeRenewalModal() {
+      document.getElementById('renewalModal').classList.add('hidden');
+    }
+
+    function confirmRenewal() {
+      closeRenewalModal();
+      alert('تم إنشاء معاملة التجديد بنجاح! سيتم إصدار الترخيص الجديد بالهوية الوطنية الحالية (1088492019) مع الإشارة لرقم الترخيص القديم.');
+    }
+
+    function openTrackModal(ref, title) {
+      document.getElementById('trackRefNum').innerText = ref;
+      document.getElementById('trackModal').classList.remove('hidden');
+    }
+
+    function closeTrackModal() {
+      document.getElementById('trackModal').classList.add('hidden');
+    }
+
+    function openCertModal(ref, title, doc) {
+      document.getElementById('certSubtitle').innerText = title;
+      document.getElementById('certModal').classList.remove('hidden');
+    }
+
+    function closeCertModal() {
+      document.getElementById('certModal').classList.add('hidden');
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('successModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('successModal').classList.add('hidden');
+      switchView('dashboard');
+    }
+  </script>
+
+</body>
+</html>

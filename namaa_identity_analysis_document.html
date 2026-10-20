@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>وثيقة التحليل الفني والنظامي - حوكمة ربط الحسابات والهويات | منصة نما</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Tajawal', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    :root {
+      --namaa-green-dark: #004D36;
+      --namaa-green-primary: #006C4C;
+      --namaa-green-light: #0A875F;
+      --namaa-mint: #E9F6F1;
+      --namaa-gold: #C29B38;
+      --namaa-gold-light: #F7F1E1;
+      --text-dark: #1E293B;
+      --text-muted: #64748B;
+      --bg-page: #F8FAF9;
+    }
+    @media print {
+      .no-print { display: none !important; }
+      body { background-color: #fff !important; padding: 0 !important; }
+      .page-break { page-break-before: always; }
+      .shadow-sm, .shadow-md, .shadow-lg { box-shadow: none !important; }
+    }
+  </style>
+</head>
+<body class="bg-[#F8FAF9] text-[#1E293B] antialiased p-3 sm:p-6 md:p-10">
+
+  <!-- Document Container -->
+  <div class="max-w-5xl mx-auto bg-white border border-[#E2E8F0] rounded-2xl shadow-xl overflow-hidden">
+    
+    <!-- Header / Brand Banner -->
+    <header class="bg-gradient-to-l from-[#003B2A] via-[#00573D] to-[#0A6D4B] text-white p-6 sm:p-10 relative overflow-hidden">
+      <!-- Watermark Pattern Accent -->
+      <div class="absolute -left-16 -top-16 w-64 h-64 rounded-full bg-white/5 blur-2xl pointer-events-none"></div>
+      <div class="absolute right-10 bottom-0 w-80 h-32 bg-[#C29B38]/10 rounded-tl-full blur-xl pointer-events-none"></div>
+
+      <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6 pb-6 border-b border-white/15">
+        <div class="flex items-center gap-4">
+          <div class="w-16 h-16 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center p-2 shadow-inner">
+            <!-- Emulating Namaa / Vision Emblem -->
+            <svg class="w-10 h-10 text-[#F7F1E1]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-[#C29B38] text-white tracking-wider">منصة نَمَاء</span>
+              <span class="text-xs text-white/80">منظومة البيئة والمياه والزراعة</span>
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-extrabold mt-1 tracking-tight">وثيقة التحليل الفني والنظامي</h1>
+            <p class="text-sm sm:text-base text-white/85 mt-0.5">حل مشكلة تعدد الحسابات وحوكمة ربط الهويات (Audited Linking Framework)</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start md:items-end gap-2 text-xs text-white/80">
+          <div class="flex items-center gap-2">
+            <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>المرجع: <strong class="text-white font-mono">NAMAA-ARCH-2026-04</strong></span>
+          </div>
+          <div>تاريخ الإصدار: <span class="text-white font-medium">أكتوبر 2026</span></div>
+          <div>الحالة: <span class="bg-white/20 text-white px-2 py-0.5 rounded font-medium">اعتماد نهائي للنقاش الفني</span></div>
+        </div>
+      </div>
+
+      <!-- Quick Action Toolbar -->
+      <div class="no-print mt-4 pt-3 flex flex-wrap items-center justify-between gap-3 text-xs">
+        <div class="text-white/80 flex items-center gap-2">
+          <svg class="w-4 h-4 text-[#F7F1E1]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          <span>مطابق للمعايير الرقابية وهيئة الحكومة الرقمية (DGA)</span>
+        </div>
+        <button onclick="window.print()" class="bg-white/10 hover:bg-white/20 transition-colors text-white px-3 py-1.5 rounded-lg border border-white/25 flex items-center gap-1.5 font-medium cursor-pointer">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+          طباعة / تصدير PDF
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content Body -->
+    <main class="p-6 sm:p-10 space-y-10">
+
+      <!-- Executive Overview Card -->
+      <section class="bg-gradient-to-br from-[#E9F6F1] to-white border border-[#BDE3D5] rounded-xl p-6 relative">
+        <div class="flex items-start gap-4">
+          <div class="p-3 bg-[#006C4C] text-white rounded-lg hidden sm:block">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="space-y-3 w-full">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h2 class="text-xl font-bold text-[#004D36]">الملخص التنفيذي (فكرة الحل باختصار وبساطة)</h2>
+              <span class="text-xs bg-[#004D36] text-white px-3 py-1 rounded-full font-medium">الهدف: حل المشكلة بدون أي خلل قانوني</span>
+            </div>
+            
+            <p class="text-sm text-[#334155] leading-relaxed">
+              المشكلة باختصار هي أن المستفيد قد يسجل قديماً بجواز سفر أو رقم حدود وتصدر له رخص ومعاملات، وبعد فترة يستخرج إقامة أو هوية وطنية ويفتح حساباً جديداً، فتتشتت معاملاته بين أكثر من حساب. 
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-2 text-xs">
+              <div class="bg-white p-3 rounded-lg border border-emerald-200 shadow-sm">
+                <div class="font-bold text-[#006C4C] mb-1">1. الربط بدلاً من الدمج والحذف</div>
+                <div class="text-slate-600">لا نحذف الحساب القديم، بل نربطه بالحساب الجديد ليراها المستفيد في شاشة واحدة.</div>
+              </div>
+
+              <div class="bg-white p-3 rounded-lg border border-emerald-200 shadow-sm">
+                <div class="font-bold text-[#006C4C] mb-1">2. الحفاظ على العقود والتراخيص</div>
+                <div class="text-slate-600">كل رخصة قديمة تظل برقم الوثيقة التي صدرت بها لحمايتها نظامياً من أي طعن.</div>
+              </div>
+
+              <div class="bg-white p-3 rounded-lg border border-emerald-200 shadow-sm">
+                <div class="font-bold text-[#006C4C] mb-1">3. هوية أساسية وإيقاف القديم</div>
+                <div class="text-slate-600">يعتمد النظام الهوية الوطنية أو الإقامة للدخول بالنفاذ، ويوقف الدخول بالحساب القديم لمنع تكرار المشكلة.</div>
+              </div>
+
+              <div class="bg-white p-3 rounded-lg border border-emerald-200 shadow-sm">
+                <div class="font-bold text-[#006C4C] mb-1">4. تدقيق بشري آمن</div>
+                <div class="text-slate-600">يتم الربط بعد مراجعة برنت الجوازات الرسمي، وبموافقة موظف واعتماد مشرف لضمان الدقة.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 1: Problem Matrix & Risks -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-3 border-b-2 border-[#006C4C] pb-2">
+          <span class="flex items-center justify-center w-7 h-7 rounded-full bg-[#006C4C] text-white text-sm font-bold">1</span>
+          <h2 class="text-xl font-bold text-[#004D36]">تشخيص المشكلة وأبعاد المخاطر النظامية</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-rose-50/70 border border-rose-200 rounded-xl p-5 space-y-2">
+            <div class="flex items-center gap-2 text-rose-800 font-bold text-sm">
+              <svg class="w-5 h-5 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+              أسباب تشكل الحسابات المتعددة
+            </div>
+            <ul class="text-xs text-rose-900/90 space-y-1.5 list-disc list-inside leading-relaxed">
+              <li><strong>التحول الطبيعي للهوية:</strong> التسجيل بجواز السفر/رقم الحدود ثم استخراج إقامة نظامية.</li>
+              <li><strong>تجديد أو تغيير جواز السفر:</strong> انتهاء صلاحية جواز السفر وإصدار جواز جديد برقم مختلف لنفس الزائر أو المستثمر.</li>
+              <li><strong>مواطنو دول الخليج:</strong> التسجيل بالهوية الخليجية ثم إصدار إقامة استثمارية أو عمل برقم محلي.</li>
+              <li><strong>التجنيس:</strong> تحول المقيم برقم إقامة إلى مواطن سعودي بهوية وطنية.</li>
+              <li><strong>غياب الربط اللحظي الاستباقي:</strong> بين أنظمة الحسابات التقليدية والوثائق المتعددة لنفس الشخص.</li>
+            </ul>
+          </div>
+
+          <div class="bg-amber-50/70 border border-amber-200 rounded-xl p-5 space-y-2">
+            <div class="flex items-center gap-2 text-amber-900 font-bold text-sm">
+              <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              مخاطر الدمج العشوائي أو التقليدي
+            </div>
+            <ul class="text-xs text-amber-900/90 space-y-1.5 list-disc list-inside leading-relaxed">
+              <li><strong>بطلان القرارات والتراخيص:</strong> نقل ملكية ترخيص صادر لشخص قد يعرض المنصة لطعون قانونية إذا حدث خطأ بشري.</li>
+              <li><strong>فقدان الحجية القضائية (Forensic Invalidation):</strong> تغيير رقم الهوية على العقود المنتهية يلغي صحتها القانونية.</li>
+              <li><strong>تشتت بيانات الاتصال:</strong> تداخل أرقام الجوالات والبريد الإلكتروني بين المعاملات.</li>
+              <li><strong>الاحتيال وانتحال الصفة:</strong> محاولة أطراف أخرى ضم سجلات لا تخصهم دون تدقيق مزدوج.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Core Architecture - Unified Beneficiary -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-3 border-b-2 border-[#006C4C] pb-2">
+          <span class="flex items-center justify-center w-7 h-7 rounded-full bg-[#006C4C] text-white text-sm font-bold">2</span>
+          <h2 class="text-xl font-bold text-[#004D36]">الهندسة المعمارية: مفهوم "المستفيد الموحد" (Unified Beneficiary)</h2>
+        </div>
+
+        <p class="text-sm text-[#475569] leading-relaxed">
+          يتحول النظام من اعتبار <strong>"رقم الهوية = الحساب"</strong> إلى نموذج <strong>"الفرد الموحد (Master Beneficiary)"</strong> الذي يمتلك عدة وثائق تعريفية عبر مسار حياته:
+        </p>
+
+        <!-- Diagram Representation -->
+        <div class="bg-[#F1F8F5] border border-[#C6E6D8] rounded-xl p-6 text-center space-y-6">
+          <div class="inline-block bg-[#004D36] text-white px-6 py-3 rounded-xl shadow-md border-2 border-[#C29B38]">
+            <div class="text-xs text-[#F7F1E1]">الكيان المرجعي الأعلى بالمنصة</div>
+            <div class="text-lg font-bold">ملف المستفيد الموحد (Unified Beneficiary ID)</div>
+            <div class="text-[11px] text-emerald-200 mt-0.5">يحمل: الجوال المعتمد • البريد المعتمد • الهوية المرجعية</div>
+          </div>
+
+          <div class="flex items-center justify-center">
+            <svg class="w-8 h-8 text-[#006C4C] animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+            <div class="bg-white border-2 border-emerald-500 rounded-lg p-3 shadow-sm text-right">
+              <div class="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded inline-block">الهوية السائدة (Primary)</div>
+              <div class="font-bold text-sm text-[#004D36] mt-1">الهوية الوطنية / الإقامة</div>
+              <div class="text-[11px] text-[#64748B] mt-0.5">الدخول الحصري عبر النفاذ الموحد</div>
+            </div>
+
+            <div class="bg-white/80 border border-slate-200 rounded-lg p-3 text-right">
+              <div class="text-[11px] font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded inline-block">وثيقة ثانوية مربوطة</div>
+              <div class="font-bold text-sm text-slate-800 mt-1">جواز السفر القديم</div>
+              <div class="text-[11px] text-[#64748B] mt-0.5">تجميد الدخول المباشر</div>
+            </div>
+
+            <div class="bg-white/80 border border-slate-200 rounded-lg p-3 text-right">
+              <div class="text-[11px] font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded inline-block">وثيقة ثانوية مربوطة</div>
+              <div class="font-bold text-sm text-slate-800 mt-1">الهوية الخليجية</div>
+              <div class="text-[11px] text-[#64748B] mt-0.5">تجميد الدخول المباشر</div>
+            </div>
+
+            <div class="bg-white/80 border border-slate-200 rounded-lg p-3 text-right">
+              <div class="text-[11px] font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded inline-block">وثيقة ثانوية مربوطة</div>
+              <div class="font-bold text-sm text-slate-800 mt-1">رقم الحدود التأشيرة</div>
+              <div class="text-[11px] text-[#64748B] mt-0.5">أرشيف تاريخي للمعاملات</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Identity Hierarchy & Required Evidence -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-3 border-b-2 border-[#006C4C] pb-2">
+          <span class="flex items-center justify-center w-7 h-7 rounded-full bg-[#006C4C] text-white text-sm font-bold">3</span>
+          <h2 class="text-xl font-bold text-[#004D36]">سلم السيادية للهويات ومتطلبات الإثبات النظامي</h2>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-right border-collapse text-xs sm:text-sm">
+            <thead>
+              <tr class="bg-[#004D36] text-white">
+                <th class="p-3 rounded-tr-lg">الرتبة</th>
+                <th class="p-3">نوع الوثيقة</th>
+                <th class="p-3">الصفة داخل النظام</th>
+                <th class="p-3">المستندات النظامية الإلزامية للربط</th>
+                <th class="p-3 rounded-tl-lg">طريقة التحقق المعتمدة</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200 border border-slate-200">
+              <tr class="hover:bg-emerald-50/50">
+                <td class="p-3 font-bold text-emerald-800">1 (الأعلى)</td>
+                <td class="p-3 font-bold text-[#004D36]">الهوية الوطنية السعودية</td>
+                <td class="p-3"><span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-medium">الهوية المرجعية المطلقة</span></td>
+                <td class="p-3 text-slate-600">برنت الأحوال / إشعار إسقاط الإقامة عند التجنيس</td>
+                <td class="p-3 text-emerald-700 font-medium">النفاذ الوطني الموحد / يقين</td>
+              </tr>
+              <tr class="hover:bg-emerald-50/50">
+                <td class="p-3 font-bold text-emerald-800">2</td>
+                <td class="p-3 font-bold text-[#004D36]">الإقامة النظامية (مقيم)</td>
+                <td class="p-3"><span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-medium">الهوية المرجعية لغير المواطن</span></td>
+                <td class="p-3 text-slate-600">إفادة نقل معلومات الجواز للإقامة / برنت الجوازات</td>
+                <td class="p-3 text-emerald-700 font-medium">منصة مقيم / يقين</td>
+              </tr>
+              <tr class="hover:bg-emerald-50/50">
+                <td class="p-3 font-bold text-slate-700">3</td>
+                <td class="p-3 font-medium text-slate-800">الهوية الوطنية الخليجية</td>
+                <td class="p-3"><span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-medium">حساب معتمد (يتحول لثانوي بعد الإقامة)</span></td>
+                <td class="p-3 text-slate-600">إثبات المطابقة الرسمية / السجل التجاري المستثمر</td>
+                <td class="p-3 text-slate-600">بوابة الجوازات / مركز المعلومات</td>
+              </tr>
+              <tr class="hover:bg-emerald-50/50">
+                <td class="p-3 font-bold text-slate-700">4 (الأدنى)</td>
+                <td class="p-3 font-medium text-slate-800">جواز السفر / رقم الحدود</td>
+                <td class="p-3"><span class="px-2 py-0.5 rounded bg-amber-100 text-amber-800 font-medium">حساب أولي مؤقت (يُجمد بعد الربط)</span></td>
+                <td class="p-3 text-slate-600">صورة الجواز القديم + ختم الدخول / رقم الحدود</td>
+                <td class="p-3 text-slate-600">الفحص والمطابقة اليدوية للبرنت المرفق</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 4: Operational Workflow (Maker-Checker) -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-3 border-b-2 border-[#006C4C] pb-2">
+          <span class="flex items-center justify-center w-7 h-7 rounded-full bg-[#006C4C] text-white text-sm font-bold">4</span>
+          <h2 class="text-xl font-bold text-[#004D36]">إجراءات المسار المعتمد: التدقيق البشري والرقابة الثنائية (Maker-Checker)</h2>
+        </div>
+
+        <p class="text-sm text-[#475569] leading-relaxed">
+          لحماية المنصة وموظفيها من أي مساءلة، يُحظر إتمام أي عملية ربط عبر قرار موظف منفرد. تتم المعالجة عبر أربع مراحل متتابعة:
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <!-- Step 1 -->
+          <div class="bg-white border-t-4 border-[#004D36] border-x border-b border-slate-200 rounded-xl p-4 shadow-sm space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-slate-100 text-[#004D36]">المرحلة 1</span>
+              <span class="text-xs text-[#C29B38] font-bold">المستفيد</span>
+            </div>
+            <h3 class="font-bold text-sm text-[#004D36]">تقديم طلب الربط</h3>
+            <ul class="text-xs text-slate-600 space-y-1">
+              <li>• الدخول عبر النفاذ الموحد بالهوية السائدة.</li>
+              <li>• تحديد الهوية السابقة وسبب الربط.</li>
+              <li>• إرفاق برنت الجوازات / إفادة المطابقة.</li>
+              <li>• <strong>التوقيع على التعهد القانوني الإلكتروني.</strong></li>
+            </ul>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="bg-white border-t-4 border-emerald-600 border-x border-b border-slate-200 rounded-xl p-4 shadow-sm space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-emerald-50 text-emerald-700">المرحلة 2</span>
+              <span class="text-xs text-emerald-700 font-bold">الموظف الفاحص (Maker)</span>
+            </div>
+            <h3 class="font-bold text-sm text-[#004D36]">الفحص الأولي والمطابقة</h3>
+            <ul class="text-xs text-slate-600 space-y-1">
+              <li>• مطابقة الاسم الرباعي وتاريخ الميلاد.</li>
+              <li>• التحقق من رقم الجواز في البرنت الرسمي.</li>
+              <li>• فحص التراخيص والطلبات المرتبطة.</li>
+              <li>• رفع التوصية بالقبول أو الرفض المسبب.</li>
+            </ul>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-white border-t-4 border-[#C29B38] border-x border-b border-slate-200 rounded-xl p-4 shadow-sm space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-amber-50 text-amber-700">المرحلة 3</span>
+              <span class="text-xs text-[#C29B38] font-bold">المشرف المعتمد (Checker)</span>
+            </div>
+            <h3 class="font-bold text-sm text-[#004D36]">المراجعة والاعتماد</h3>
+            <ul class="text-xs text-slate-600 space-y-1">
+              <li>• مراجعة تقرير الفاحص والمرفقات.</li>
+              <li>• التأكد من سلامة الموقف النظامي.</li>
+              <li>• إصدار أمر الاعتماد والتنفيذ الآلي.</li>
+              <li>• المصادقة برمز الأمان الثنائي (2FA).</li>
+            </ul>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="bg-white border-t-4 border-teal-600 border-x border-b border-slate-200 rounded-xl p-4 shadow-sm space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-teal-50 text-teal-700">المرحلة 4</span>
+              <span class="text-xs text-teal-700 font-bold">محرك النظام الآلي</span>
+            </div>
+            <h3 class="font-bold text-sm text-[#004D36]">التنفيذ والأرشفة</h3>
+            <ul class="text-xs text-slate-600 space-y-1">
+              <li>• ربط الهوية بالسجل الموحد.</li>
+              <li>• <strong>تجميد تسجيل الدخول بالحساب القديم.</strong></li>
+              <li>• تجميع المعاملات في لوحة المستفيد.</li>
+              <li>• تدوين سجل التدقيق المشفر وإشعار العميل.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Legal & Regulatory Safeguards -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-3 border-b-2 border-[#006C4C] pb-2">
+          <span class="flex items-center justify-center w-7 h-7 rounded-full bg-[#006C4C] text-white text-sm font-bold">5</span>
+          <h2 class="text-xl font-bold text-[#004D36]">الحماية القانونية وعدم المساس بالسجلات التاريخية</h2>
+        </div>
+
+        <div class="space-y-4">
+          <!-- Principles Box -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 space-y-3">
+            <h3 class="text-sm font-bold text-[#004D36] flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              القواعد الذهبية للحفظ القانوني والتدقيقي (Legal Non-Repudiation Rules):
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-slate-700">
+              <div class="p-3 bg-white rounded-lg border border-slate-200">
+                <strong class="text-emerald-900 block mb-1">1. بقاء التوقيعات والعقود القديمة:</strong>
+                تظل جميع الطلبات والتراخيص الصادرة سابقاً محتفظة ببيانات الهوية الأصلية التي أُنشئت بها (مثال: رقم الجواز) لمنع أي طعن قضائي يفيد بتعديل وثيقة رسمية بأثر رجعي.
+              </div>
+              <div class="p-3 bg-white rounded-lg border border-slate-200">
+                <strong class="text-emerald-900 block mb-1">2. تجديد التراخيص والمعاملات اللاحقة:</strong>
+                عند تقدم المستفيد بطلب "تجديد" أو "تعديل" رخصة زراعية/مائية صدرت سابقاً بالجواز، يتم إصدار الوثيقة الجديدة تلقائياً برقم الإقامة/الهوية الوطنية مع الإشارة لرقم الترخيص السابق.
+              </div>
+              <div class="p-3 bg-white rounded-lg border border-slate-200">
+                <strong class="text-emerald-900 block mb-1">3. المعاملات الجارية (قيد الدراسة):</strong>
+                يظهر لباحث المعاملة في منصة نما تنبيه فوري: <em>"تم ربط مقدم الطلب بحساب موحد تحت الهوية (XXXX)"</em>، ليعتمد الباحث القرار بموجب الهوية السائدة.
+              </div>
+              <div class="p-3 bg-white rounded-lg border border-slate-200">
+                <strong class="text-emerald-900 block mb-1">4. حظر الدخول المباشر بالحساب القديم:</strong>
+                يتم تعطيل أي محاولة تسجيل دخول باستخدام بيانات الحساب القديم، وتوجيه المستفيد إجبارياً للدخول عبر النفاذ الوطني بالهوية المعتمدة لمنع خلق معاملات مبعثرة مستقبلاً.
+              </div>
+            </div>
+          </div>
+
+          <!-- Legal Declaration Sample -->
+          <div class="border border-[#C29B38]/40 bg-[#FFFDF8] rounded-xl p-5 space-y-2">
+            <div class="flex items-center gap-2 text-[#9A751C] font-bold text-sm">
+              <svg class="w-5 h-5 text-[#C29B38]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              صيغة الإقرار والتعهد القانوني الإلزامي في واجهة طلب المستفيد
+            </div>
+            <blockquote class="text-xs text-[#422006] italic bg-white p-3 rounded-lg border border-[#C29B38]/20 leading-relaxed">
+              "أقر أنا مقدم الطلب بأن الحساب والوثيقة السابقة المسجلة برقم (..................) تخصني شخصياً، وأن جميع المستندات والإفادات الرسمية المرفقة صادرة لي ومطابقة للواقع، وأتحمل كامل المسؤولية النظامية والجنائية أمام الجهات المختصة في المملكة العربية السعودية في حال ثبوت خلاف ذلك، وأفوض منصة نما بربط كافة المعاملات والتراخيص السابقة بملف المستفيد الموحد الخاص بي."
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Communications & Contact Management -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-3 border-b-2 border-[#006C4C] pb-2">
+          <span class="flex items-center justify-center w-7 h-7 rounded-full bg-[#006C4C] text-white text-sm font-bold">6</span>
+          <h2 class="text-xl font-bold text-[#004D36]">حوكمة بيانات الاتصال (الجوال والبريد المعتمد)</h2>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-xl p-5 space-y-4">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            نظراً لاحتمال كون المستفيد أو المفوض (مثل المستثمرين الزراعيين أو مواطني دول الخليج) مقيماً خارج المملكة ويستخدم رقماً دولياً غير مقيد في منصة "أبشر"، يتم تطبيق السياسة التنظيمية التالية:
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-4 rounded-xl bg-emerald-50/70 border border-emerald-200 space-y-2">
+              <div class="text-xs font-bold text-emerald-800 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                حرية الاختيار مع التحقق الإلزامي بـ (OTP):
+              </div>
+              <p class="text-xs text-slate-700 leading-relaxed">
+                يتاح للمستفيد اختيار وتحديد رقم الجوال المعتمد (محلياً كان أو دولياً بمفتاح دولته) والبريد الإلكتروني المفضل، شريطة <strong>التحقق اللحظي عبر إرسال رمز تحقق (SMS OTP / Email OTP)</strong> ولا يُعتمد أي رقم ما لم يتم إدخال الرمز بنجاح.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <div class="text-xs font-bold text-slate-700 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+                البريد كقناة موازية معتمدة للأرقام الدولية:
+              </div>
+              <p class="text-xs text-slate-700 leading-relaxed">
+                في حال اعتماد رقم هاتف دولي، يُلزم النظام المستفيد بتأكيد بريد إلكتروني نشط، ليصبح قناة إرسال التراخيص والقرارات الرسمية المعتمدة لضمان التبليغ القضائي والنظامي.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7: Post-Approval Data Display & Previous Request Management -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-3 border-b-2 border-[#006C4C] pb-2">
+          <span class="flex items-center justify-center w-7 h-7 rounded-full bg-[#006C4C] text-white text-sm font-bold">7</span>
+          <h2 class="text-xl font-bold text-[#004D36]">عرض البيانات وإدارة الطلبات السابقة بعد الموافقة على الربط</h2>
+        </div>
+
+        <p class="text-sm text-[#475569] leading-relaxed">
+          بعد اعتماد المشرف لطلب الربط عبر مسار التدقيق البشري، يُجيب النظام عملياً عن تساؤلين رئيسيين: <strong>كيف يرى المستفيد بياناته؟</strong> و<strong>كيف يتعامل مع طلباته ورخصه السابقة؟</strong>
+        </p>
+
+        <!-- 1. How data is displayed in the Unified Dashboard -->
+        <div class="bg-white border border-slate-200 rounded-xl p-5 space-y-4 shadow-sm">
+          <h3 class="text-base font-bold text-[#0E563B] flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+            1. آلية عرض البيانات في لوحة تحكم المستفيد (Unified Dashboard UX)
+          </h3>
+          
+          <ul class="text-xs sm:text-sm text-slate-700 space-y-2 list-disc list-inside leading-relaxed">
+            <li><strong>لوحة طلبات ورخص موحدة:</strong> يرى المستفيد قائمة مجمعة تحتوي على كافة معاملاته وتراخيصه القديمة (الصادرة بالجواز أو الحدود) والجديدة (الصادرة بالإقامة/الهوية) في مكان واحد دون الحاجة للتنقل بين حسابات مختلفة.</li>
+            <li><strong>شارة مصدر المعاملة (Identity Origin Badge):</strong> يظهر بجانب كل طلب أو ترخيص وسام توضيحي يحدد الوثيقة التي أُنشئت بموجبها، مثل: <span class="bg-amber-100 text-amber-900 text-xs px-2 py-0.5 rounded font-mono font-medium">صادر بموجب جواز سفر: N09817264</span> أو <span class="bg-emerald-100 text-emerald-900 text-xs px-2 py-0.5 rounded font-mono font-medium">صادر بموجب هوية وطنية</span>.</li>
+            <li><strong>فلترة ذكية متعددة المعايير:</strong> إمكانية تصفية قائمة الطلبات حسب: (عرض كافة المعاملات • معاملات الحساب الحالي • معاملات الوثيقة السابقة المربوطة).</li>
+            <li><strong>سجل الهويات المربوطة في الملف الشخصي:</strong> يظهر في الملف التعريفي للمستفيد صندوق يوضح "الوثائق السابقة المربوطة" مع تاريخ الربط وتأكيد أن الدخول بها مجمد.</li>
+          </ul>
+
+          <!-- Visual Mock of Unified Requests Table -->
+          <div class="border border-slate-200 rounded-xl overflow-hidden mt-3">
+            <div class="bg-slate-50 px-4 py-2 border-b border-slate-200 text-xs font-bold text-slate-700 flex justify-between items-center">
+              <span>نموذج محاكاة: شاشة "قائمة طلباتي وتراخي صي" في حساب المستفيد الموحد</span>
+              <span class="text-emerald-700 text-[11px]">عرض موحد لـ 3 معاملات من مصدرين</span>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-right text-xs">
+                <thead class="bg-[#F8FAF9] text-slate-600 border-b border-slate-200">
+                  <tr>
+                    <th class="p-2.5">رقم الطلب / الرخصة</th>
+                    <th class="p-2.5">نوع الخدمة</th>
+                    <th class="p-2.5">الوثيقة المصدر</th>
+                    <th class="p-2.5">الحالة</th>
+                    <th class="p-2.5 text-center">الإجراءات المتاحة</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                  <tr class="hover:bg-slate-50">
+                    <td class="p-2.5 font-mono font-bold text-slate-800">LIC-AGRI-2024-091</td>
+                    <td class="p-2.5 font-medium">ترخيص مزرعة إنتاج نباتي</td>
+                    <td class="p-2.5"><span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-[11px] font-mono">جواز سفر: N09817264</span></td>
+                    <td class="p-2.5"><span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded text-[11px] font-bold">ساري المفعول</span></td>
+                    <td class="p-2.5 text-center space-x-1 space-x-reverse">
+                      <span class="text-emerald-700 hover:underline cursor-pointer font-bold">عرض الشهادة</span> • 
+                      <span class="text-blue-700 hover:underline cursor-pointer font-bold">طلب تجديد</span>
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-slate-50">
+                    <td class="p-2.5 font-mono font-bold text-slate-800">REQ-WAT-2026-110</td>
+                    <td class="p-2.5 font-medium">تصريح حفر بئر جوفي</td>
+                    <td class="p-2.5"><span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-[11px] font-mono">جواز سفر: N09817264</span></td>
+                    <td class="p-2.5"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-[11px] font-bold">تحت المعالجة الفنية</span></td>
+                    <td class="p-2.5 text-center space-x-1 space-x-reverse">
+                      <span class="text-emerald-700 hover:underline cursor-pointer font-bold">متابعة وحركات الطلب</span> • 
+                      <span class="text-slate-600 hover:underline cursor-pointer">إرفاق نواقص</span>
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-slate-50">
+                    <td class="p-2.5 font-mono font-bold text-slate-800">REQ-ENV-2026-882</td>
+                    <td class="p-2.5 font-medium">تصريح بيئي تشغيلي</td>
+                    <td class="p-2.5"><span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded text-[11px] font-mono">هوية وطنية: 1088492019</span></td>
+                    <td class="p-2.5"><span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-[11px] font-bold">بانتظار سداد المقابل</span></td>
+                    <td class="p-2.5 text-center space-x-1 space-x-reverse">
+                      <span class="text-emerald-700 hover:underline cursor-pointer font-bold">سداد الفاتورة</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Managing Previous Requests Policy -->
+        <div class="bg-white border border-slate-200 rounded-xl p-5 space-y-4 shadow-sm">
+          <h3 class="text-base font-bold text-[#0E563B] flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#C29B38]"></span>
+            2. سياسة إدارة الطلبات السابقة للحساب السابق (Lifecycle Management)
+          </h3>
+
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            <strong>نعم، يمكن للمستفيد إدارة كافة طلباته السابقة بالكامل من حسابه المعتمد الحالي</strong>، مع تطبيق المعايير النظامية التالية لكل نوع من المعاملات:
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+            <!-- Case A: Active Licenses -->
+            <div class="border border-emerald-200 bg-emerald-50/40 rounded-xl p-4 space-y-2">
+              <div class="font-bold text-emerald-900 text-sm flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                أ) التراخيص والشهادات الصادرة
+              </div>
+              <ul class="text-slate-700 space-y-1.5 leading-relaxed">
+                <li>• <strong>الطباعة والاستعراض:</strong> يمكنه تحميل الشهادة الأصلية في أي وقت (تظل برقم الجواز القديم حفظاً للحجية التاريخية).</li>
+                <li>• <strong>إجراء التجديد أو التعديل:</strong> عند طلب التجديد، <strong>تُصدر الوثيقة المجددة تلقائياً برقم الهوية الحالية</strong>، مع تدوين حاشية نظامية: <em>"تجديد للترخيص رقم (...) الصادر سابقاً بموجب جواز السفر (...)"</em>.</li>
+                <li>• <strong>الإلغاء أو التنازل:</strong> يمكنه طلب إلغاء الترخيص أو نقل ملكيته بمصادقة النفاذ الوطني الحالي.</li>
+              </ul>
+            </div>
+
+            <!-- Case B: In-flight Requests -->
+            <div class="border border-blue-200 bg-blue-50/40 rounded-xl p-4 space-y-2">
+              <div class="font-bold text-blue-900 text-sm flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                ب) الطلبات التي ما زالت تحت المعالجة
+              </div>
+              <ul class="text-slate-700 space-y-1.5 leading-relaxed">
+                <li>• <strong>استكمال الإجراءات:</strong> يمكن للمستفيد رفع النواقص، الرد على استفسارات اللجنة الفنية، وسداد الفواتير الحكومية.</li>
+                <li>• <strong>إشعار الباحث الفني:</strong> يظهر لموظف الوزارة في نظام المعاملات تنبيه آلي: <em>"تم تحديث هوية مقدم الطلب بموجب قرار الربط الإداري (REF-XXXX)"</em>.</li>
+                <li>• <strong>صدور القرار النهائي:</strong> عند الموافقة النهائية على المعاملة، يصدر الترخيص النهائي <strong>مباشرة بالهوية الحالية المعتمدة</strong>.</li>
+              </ul>
+            </div>
+
+            <!-- Case C: Drafts & Inactive Records -->
+            <div class="border border-slate-200 bg-slate-50 rounded-xl p-4 space-y-2">
+              <div class="font-bold text-slate-800 text-sm flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                ج) مسودات الطلبات والأرشيف
+              </div>
+              <ul class="text-slate-700 space-y-1.5 leading-relaxed">
+                <li>• <strong>المسودات غير المكتملة (Drafts):</strong> إذا كان قد بدأ بطلب في الحساب القديم ولم يرسله، يمكنه استكماله وإرساله لتُقيد المعاملة بالهوية الحالية.</li>
+                <li>• <strong>الطلبات المرفوضة أو الملغاة:</strong> تبقى مؤرشفة للقراءة فقط مع بيان سبب الرفض وتاريخه القديم للرجوع إليها عند الحاجة.</li>
+                <li>• <strong>حظر إنشاء طلبات بالهوية القديمة:</strong> يمنع النظام إنشاء أي معاملة جديدة بالهوية السابقة لأن تسجيل الدخول بها مجمد.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+
+      <!-- Section 8: Final Summary / Conclusion -->
+      <section class="bg-gradient-to-r from-[#004D36] to-[#0A6D4B] text-white rounded-xl p-6 shadow-md space-y-3">
+        <h3 class="text-lg font-bold text-[#F7F1E1]">الخلاصة والخطوات التنفيذية القادمة</h3>
+        <p class="text-xs sm:text-sm leading-relaxed text-white/90">
+          من خلال تطبيق هذا التصور، تضمن منصة <strong>نما</strong> القضاء التام على تشتت الحسابات وتكرار المعاملات، مع توفير تجربة سلسة للمستفيد عبر عرض موحد لجميع طلباته، والأهم من ذلك: <strong>تحصين قرارات وتراخيص الوزارة قانونياً وإجرائياً</strong> من خلال الحفاظ الكامل على الحجية التاريخية وتطبيق رقابة ثنائية صارمة غير قابلة للتلاعب.
+        </p>
+      </section>
+
+    </main>
+
+    <!-- Document Footer -->
+    <footer class="bg-slate-100 border-t border-slate-200 px-6 py-4 text-center text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div>وثيقة استشارية فنية - منصة نما (منظومة البيئة والمياه والزراعة)</div>
+      <div class="text-[#006C4C] font-semibold">رؤية المملكة 2030 • التحول الرقمي الحكومي</div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
