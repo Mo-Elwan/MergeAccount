@@ -220,18 +220,23 @@
       <section class="space-y-4">
         <div class="flex items-center gap-3 border-b-2 border-[#006C4C] pb-2">
           <span class="flex items-center justify-center w-7 h-7 rounded-full bg-[#006C4C] text-white text-sm font-bold">3</span>
-          <h2 class="text-xl font-bold text-[#004D36]">سلم السيادية للهويات ومتطلبات الإثبات النظامي</h2>
+          <h2 class="text-xl font-bold text-[#004D36]">سلم السيادية لوثائق الهوية ومتطلبات الإثبات النظامي</h2>
         </div>
 
+        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+          يعتمد النظام مبدأ التدرج السيادي الصارم للوثائق الرسمية الصادرة من الجهات الحكومية، بحيث يُحدد الحساب الرئيسي والوثائق الملحقة وفق الترتيب التالي:
+        </p>
+
+        <!-- Hierarchy Table Focused on Documents -->
         <div class="overflow-x-auto">
           <table class="w-full text-right border-collapse text-xs sm:text-sm">
             <thead>
               <tr class="bg-[#004D36] text-white">
-                <th class="p-3 rounded-tr-lg">الرتبة</th>
-                <th class="p-3">نوع الوثيقة</th>
-                <th class="p-3">الصفة داخل النظام</th>
-                <th class="p-3">المستندات النظامية الإلزامية للربط</th>
-                <th class="p-3 rounded-tl-lg">طريقة التحقق المعتمدة</th>
+                <th class="p-3 rounded-tr-lg">الرتبة السيادية</th>
+                <th class="p-3">نوع الوثيقة الرسمية</th>
+                <th class="p-3">الصفة داخل المنصة</th>
+                <th class="p-3">مسار التحول والربط الأكثر شيوعاً</th>
+                <th class="p-3 rounded-tl-lg">المستند الإلزامي للربط</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-200 border border-slate-200">
@@ -239,29 +244,29 @@
                 <td class="p-3 font-bold text-emerald-800">1 (الأعلى)</td>
                 <td class="p-3 font-bold text-[#004D36]">الهوية الوطنية السعودية</td>
                 <td class="p-3"><span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-medium">الهوية المرجعية المطلقة</span></td>
-                <td class="p-3 text-slate-600">برنت الأحوال / إشعار إسقاط الإقامة عند التجنيس</td>
-                <td class="p-3 text-emerald-700 font-medium">النفاذ الوطني الموحد / يقين</td>
+                <td class="p-3 text-slate-700">وارث دائم لكافة الحسابات السابقة (تُربط به الإقامة عند التجنيس)</td>
+                <td class="p-3 text-slate-600">النفاذ الوطني الموحد / برنت الأحوال المدنية</td>
               </tr>
               <tr class="hover:bg-emerald-50/50">
                 <td class="p-3 font-bold text-emerald-800">2</td>
                 <td class="p-3 font-bold text-[#004D36]">الإقامة النظامية (مقيم)</td>
-                <td class="p-3"><span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-medium">الهوية المرجعية لغير المواطن</span></td>
-                <td class="p-3 text-slate-600">إفادة نقل معلومات الجواز للإقامة / برنت الجوازات</td>
-                <td class="p-3 text-emerald-700 font-medium">منصة مقيم / يقين</td>
+                <td class="p-3"><span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-medium">الهوية المرجعية لغير المواطنين</span></td>
+                <td class="p-3 text-slate-700">تستوعب وتضم جوازات السفر وأرقام الحدود السابقة</td>
+                <td class="p-3 text-slate-600">برنت نقل معلومات الجواز للإقامة من منصة مقيم / الجوازات</td>
               </tr>
               <tr class="hover:bg-emerald-50/50">
                 <td class="p-3 font-bold text-slate-700">3</td>
-                <td class="p-3 font-medium text-slate-800">الهوية الوطنية الخليجية</td>
+                <td class="p-3 font-medium text-slate-800">الهوية الوطنية لمواطني الخليج</td>
                 <td class="p-3"><span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-medium">حساب معتمد (يتحول لثانوي بعد الإقامة)</span></td>
-                <td class="p-3 text-slate-600">إثبات المطابقة الرسمية / السجل التجاري المستثمر</td>
-                <td class="p-3 text-slate-600">بوابة الجوازات / مركز المعلومات</td>
+                <td class="p-3 text-slate-700">تُربط بالإقامة الاستثمارية في حال صدورها</td>
+                <td class="p-3 text-slate-600">برنت الجوازات / إثبات السجل التجاري المستثمر</td>
               </tr>
               <tr class="hover:bg-emerald-50/50">
-                <td class="p-3 font-bold text-slate-700">4 (الأدنى)</td>
+                <td class="p-3 font-bold text-amber-800">4 (الأدنى)</td>
                 <td class="p-3 font-medium text-slate-800">جواز السفر / رقم الحدود</td>
-                <td class="p-3"><span class="px-2 py-0.5 rounded bg-amber-100 text-amber-800 font-medium">حساب أولي مؤقت (يُجمد بعد الربط)</span></td>
-                <td class="p-3 text-slate-600">صورة الجواز القديم + ختم الدخول / رقم الحدود</td>
-                <td class="p-3 text-slate-600">الفحص والمطابقة اليدوية للبرنت المرفق</td>
+                <td class="p-3"><span class="px-2 py-0.5 rounded bg-amber-100 text-amber-800 font-medium">حساب أولي مؤقت (يُجمد دخوله بعد الربط)</span></td>
+                <td class="p-3 text-slate-700">يُربط بالإقامة الجديدة، أو يُربط بجواز سفر جديد عند التجديد</td>
+                <td class="p-3 text-slate-600">صورة الجواز القديم + إفادة الجوازات أو صورة الجواز الجديد</td>
               </tr>
             </tbody>
           </table>
